@@ -26,12 +26,12 @@ void loop() {
   float celsius= millivolts/10;
   Serial.print(celsius);
   Serial.print(" degrees Celsius, ");
-  float farenheit = (celsius * 9)/5 + 32;
-  Serial.print(farenheit);
+  float fahrenheit = (celsius * 9)/5 + 32;
+  Serial.print(fahrenheit);
   Serial.println(" degrees Fahrenheit");
   lcd.setCursor(5, 0);
   lcd.print(String(celsius));
   lcd.setCursor(5, 1);
-  lcd.print(String(farenheit));
+  lcd.print(String(fahrenheit));
   delay(1000);
 }
